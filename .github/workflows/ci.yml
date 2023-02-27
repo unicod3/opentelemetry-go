@@ -158,4 +158,4 @@ jobs:
       - name: Test if compatibility-test passed
         run: |
           echo ${{ needs.compatibility-test.result }}
-          test ${{ needs.compatibility-test.result" }} == "success"
+          test ${{ needs.compatibility-test.result }} == "success"
