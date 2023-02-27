@@ -155,7 +155,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [compatibility-test]
     steps:
-      - name: Interpret result
+      - name: Test if compatibility-test passed
         run: |
           echo "${{ needs.compatibility-test.result }}"
           test "${{ needs.compatibility-test.result" }} == "success"
